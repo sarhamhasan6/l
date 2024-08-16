@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open the Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card-container {
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 800px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: transform 1s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-front {
+            background-color: #ff4d4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .card-back {
+            background-color: #ff9999;
+            transform: rotateY(180deg);
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 1.0rem;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .letter {
+            color: #800000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-front">
+                <div>OPEN ME MY HIGHNESS</div>
+            </div>
+            <div class="card-back">
+                <div class="letter">
+                    Dear My Princess Ashi,<br><br>
+                    I wanted to tell you something that ik sometimes you feel leftover,  sometimes you feel insecure , sometimes you feel too down , sometimes your mood isn't to talk , sometimes people are not how you want them to be , and sometimes your life isn't working the way you want it to be but in all of these sometimes I promise you I will be always same to you if you feel leftout yk you should know you are someone's permanent heartbeat so not at all leftout ,if you feel insecure so you should know someone adores you day and night and for him everyday you are more beautiful than before , sometimes you're down ik but you should know someone's always ready tu cheer you up and bring back to life where you belong , when people are not up to your expectations you should know someone's always trying to meet your expectations and be the best for you , and when life isn't working I want you to use my shoulder to climb up to achieve your goals , I am always with you either it be my good times or bad
+                    <br>And one more thing it was abt your health I was sooooo happy that you were finally back in your good mood and that tiring and exhausting period ended although for me it's the best time when I am able to help someone when they are in difficult time and I hope iwas of a little or prolly no help for you but I did tried my best to make you feel better , well coming back to the point it really felt to me as if I was ill and now I am back again in life idk how but prolly bcz may apkey sath hr wqt hota tha isliyey and ab now you are happy again back in life I thanked God for that as I told you you will get better soon so it really was something beautiful seeing my baby back again in life cheerful happy and once again annoying me :).<br><br>
+                    Forever yours (Your Prince),<br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
